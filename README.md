@@ -27,7 +27,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :groups_users
-- hss_many :users, throught: :groups_users
+- hss_many :users, through: :groups_users
 - has_many :chats
 
 ## groups_usersテーブル
