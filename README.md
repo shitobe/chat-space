@@ -56,7 +56,7 @@ Things you may want to cover:
 |------|----|-------|
 |id|integer|null: false|
 |comment|string|null: false|
-|image|string|null: false|
+|image|string|null: true|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
