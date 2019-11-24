@@ -45,8 +45,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|comment|string|null: false|
-|image|string|null: true|
+|comment|string||
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
