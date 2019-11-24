@@ -5,20 +5,51 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+# DB設計
+## usersテーブル
 
-* System dependencies
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false,index: true|
+|email|string|null: false,index: true,unique: true|
+|password|string|null: false|
 
-* Configuration
+### Association
+- has_many :groups_users
+- hss_many :groups, through: :groups_users
+- has_many :chats
 
-* Database creation
+## groupsテーブル
 
-* Database initialization
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
 
-* How to run the test suite
+### Association
+- has_many :groups_users
+- hss_many :users, through: :groups_users
+- has_many :chats
 
-* Services (job queues, cache servers, search engines, etc.)
+## groups_usersテーブル
 
-* Deployment instructions
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
-* ...
+### Association
+- belongs_to :group
+- belongs_to :user
+
+## chatsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|comment|string||
+|image|string||
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
