@@ -27,6 +27,18 @@ Things you may want to cover:
 - hss_many :groups, throught: :groups_users
 - has_many :chats
 
+## groupsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|id|integer|null: false,|
+|name|string|null: false|
+
+### Association
+- has_many :groups_users
+- hss_many :users, throught: :groups_users
+- has_many :chats
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
