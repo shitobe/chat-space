@@ -23,7 +23,8 @@ Things you may want to cover:
 |password|string|null: false|
 
 ### Association
-- has_many :groups
+- has_many :groups_users
+- hss_many :groups, throught: :groups_users
 - has_many :chats
 
 ## groups_usersテーブル
