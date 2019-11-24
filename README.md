@@ -50,6 +50,20 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
+## chatsテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|id|integer|null: false,|
+|comment|string|null: false|
+|image|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
+
 * Database initialization
 
 * How to run the test suite
