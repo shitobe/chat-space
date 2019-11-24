@@ -10,7 +10,6 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false|
 |name|string|null: false|
 |email|string|null: false|
 |password|string|null: false|
@@ -24,7 +23,6 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false|
 |name|string|null: false|
 
 ### Association
@@ -47,7 +45,6 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false|
 |comment|string|null: false|
 |image|string|null: true|
 |user_id|integer|null: false, foreign_key: true|
