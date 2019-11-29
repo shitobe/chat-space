@@ -21,25 +21,28 @@
 
 .chat-main {
   float:right;
-  height: 100vh;
   position: relative;
   &__group-info{
     background-color: #fff;
     position: absolute;
     height: 100px;
     width:calc(100vw - 300px);
+    float: right;
+    border-bottom: 1px solid;
+    border-bottom-color: #eeeeee;
   }
   &__message-list{
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     width:calc(100vw - 300px);
     position: absolute;
+    float: right;
   }
   &__message-form{
     background-color: #d2d2d2;
     width:calc(100vw - 300px);
     height: 90px;
     position: absolute;
-
+    float: right;
   }
 }
