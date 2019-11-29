@@ -3,13 +3,23 @@
 }
 
 .side-bar {
-  background-color: #253141;
+  background-color: #2f3e51;
+  float: left;
   height: 100vh;
   width: 300px;
+  position: relative;
+  &__user-name{
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+    float: left; 
+    position: absolute;
+  }
 }
 
 .chat-main {
-  background-color: #ffffff;
+  float:right;
+  background-color: #fffff;
   height: 100vh;
   width:calc(100vw - 300px);
 }
