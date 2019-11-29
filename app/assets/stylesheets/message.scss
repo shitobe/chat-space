@@ -29,8 +29,7 @@
     background-color: #fff;
     height: 100px;
     width:calc(100vw - 300px);
-    border-bottom: 1px solid;
-    border-bottom-color: #eeeeee;
+    border-bottom: 1px solid #eeeeee;
   }
   &__message-list{
     background-color: #fafafa;
@@ -45,10 +44,13 @@
 }
 
 .top-items{
+  margin: 0 20px;
   &__name{
-
+    color:#fff;
+    font-size: 16px;
   }
   &__icons{
-    
+    color:#fff;
+
   }
 }
