@@ -19,7 +19,16 @@
 
 .chat-main {
   float:right;
-  background-color: #fffff;
+  background-color: #fafafa;
   height: 100vh;
   width:calc(100vw - 300px);
+  position: relative;
+  &__group-info{
+    background-color: #fff;
+    float:right;
+    position: absolute;
+    height:100px;
+    width:calc(100vw - 300px);
+  }
+  
 }
