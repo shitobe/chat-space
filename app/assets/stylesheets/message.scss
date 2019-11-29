@@ -3,10 +3,6 @@
 }
 
 .side-bar {
-  background-color: #2f3e51;
-  float: left;
-  height: 100vh;
-  width: 300px;
   position: relative;
   &__user-name{
     background-color: #253141;
@@ -15,20 +11,35 @@
     float: left; 
     position: absolute;
   }
+  &__group-list{
+    background-color: #2f3e51;
+    float: left;
+    height: 100vh;
+    width: 300px;
+  }
 }
 
 .chat-main {
   float:right;
-  background-color: #fafafa;
   height: 100vh;
-  width:calc(100vw - 300px);
   position: relative;
   &__group-info{
     background-color: #fff;
-    float:right;
     position: absolute;
-    height:100px;
+    height: 100px;
     width:calc(100vw - 300px);
   }
-  
+  &__message-list{
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px);
+    width:calc(100vw - 300px);
+    position: absolute;
+  }
+  &__message-form{
+    background-color: #d2d2d2;
+    width:calc(100vw - 300px);
+    height: 90px;
+    position: absolute;
+
+  }
 }
