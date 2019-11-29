@@ -23,6 +23,7 @@
     position: absolute;
   }
 }
+
 .chat-main {
   &__group-info{
     background-color: #fff;
@@ -40,5 +41,14 @@
     background-color: #d2d2d2;
     width:calc(100vw - 300px);
     height: 90px;
+  }
+}
+
+.top-items{
+  &__name{
+
+  }
+  &__icons{
+    
   }
 }
