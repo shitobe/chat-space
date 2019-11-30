@@ -45,7 +45,14 @@
     height: calc(100vh - 100px);
     width: 300px;
     position: absolute;
-    
+    &__list{
+      &__list-name{
+
+      }
+      &__group-info{
+
+      }
+    }
   }
 }
 .top-items{
