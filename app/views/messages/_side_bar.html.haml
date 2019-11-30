@@ -1,7 +1,12 @@
 .side-bar
  .side-bar__user-name
-  .top-items
-   .top-items__name name
-   =link_to "https://www.facebook.com/", class: "top-items__icons" do
-   = icon('fab', 'facebook-square')
+  .side-bar__user-name__items
+   .side-bar__user-name__items__name name
+   .side-bar__user-name__items__icons
+    = link_to "#", class: "side-bar__user-name__items__icons__icon" do
+     = icon('fa', 'edit')
+    = link_to "#", class: "side-bar__user-name__items__icons__icon" do
+     = icon('fa', 'cog')
+    
+
  .side-bar__group-list
