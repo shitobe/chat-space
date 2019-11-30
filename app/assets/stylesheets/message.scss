@@ -45,6 +45,8 @@
 
 .top-items{
   margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
   &__name{
     color:#fff;
     font-size: 16px;
