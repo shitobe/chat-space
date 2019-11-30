@@ -28,6 +28,8 @@
       &__name{
         color:#fff;
         font-size: 16px;
+        font-weight: bold;
+
       }
       &__icons{
         width: 60px;
@@ -45,35 +47,22 @@
     height: calc(100vh - 100px);
     width: 300px;
     position: absolute;
-    &__list{
-      &__list-name{
-
-      }
-      &__group-info{
-
+    overflow-y:auto;
+    &__lists-box{
+      margin: 20px 20px 0px 20px;
+      &__list{
+        margin-bottom: 40px;
+        &__group-name{
+          color: #fff;
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__group-info{
+          color: #fff;
+          font-size: 11px;
+        }
       }
     }
-  }
-}
-.top-items{
-  margin: 0 20px;
-  display: flex;
-  width: 260px;
-  height: 20px;
-  justify-content:space-between;
-  align-items: center;
-  &__name{
-    color:#fff;
-    font-size: 16px;
-  }
-  &__icons{
-    width: 60px;
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__icon{
-    color:#fff;
-    margin-left:5px;
   }
 }
 
@@ -83,6 +72,18 @@
     height: 100px;
     width:calc(100vw - 300px);
     border-bottom: 1px solid #eeeeee;
+    &__group-box{
+
+      &__group-name{
+
+      }
+      &__mamber-list{
+
+      }
+      &__edit-btn{
+
+      }
+    }
   }
   &__message-list{
     background-color: #fafafa;
