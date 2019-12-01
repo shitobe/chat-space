@@ -135,15 +135,42 @@
     width:calc(100vw - 300px);
     height: 90px;
     display: flex;
-    &__text-form{
-      &--type-message{
-
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    &__form-box{
+      display: flex;
+      width:calc(100vw - 300px);
+      &__text-form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &--type-message{
+          align-items: center;
+          border-style: none;
+          padding: 0 40px 0 10px;
+          height: 50px;
+          width: 100%;
+        }
+        &--image-btn{
+          position: absolute;
+          padding: 10px;
+          right:10px;
+          #display-none{
+            display:none;
+          }
+        }
       }
-      &--image-upload{
-        
+      &__send-btn{
+        background-color: #38aef0;
+        color: #fff;
+        height: 50px;
+        width: 100px;
+        border: 1px solid #38aef0;
+        margin-left: 15px;
       }
     }
   }
-
 }
 
