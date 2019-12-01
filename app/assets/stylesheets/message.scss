@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw;
+}
+$side-bar-font-color: rgb(255,255,255);
+.side-bar {
+  &__user-name{
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+    position: relative;
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    &__items{
+      margin: 0 20px;
+      display: flex;
+      width: 260px;
+      height: 20px;
+      justify-content:space-between;
+      align-items: center;
+      &__name{
+        color:$side-bar-font-color;
+        font-size: 16px;
+        font-weight: bold;
+
+      }
+      &__icons{
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        &__icon{
+          color:$side-bar-font-color;
+          margin-left:5px;
+        }
+      }
+    }
+  }
+  &__group-lists{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    width: 300px;
+    position: absolute;
+    overflow:auto;
+    &__lists-box{
+      margin: 20px 20px 0px 20px;
+      &__list{
+        margin-bottom: 40px;
+        &__group-name{
+          color: $side-bar-font-color;
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__group-info{
+          color: $side-bar-font-color;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+$chat-main-fontmain-color: rgb(51,51,51);
+$chat-main-fontsub-color: rgb(153,153,153);
+$chat-main-btn-color: rgb(56,174,240);
+.chat-main {
+  &__group-info{
+    background-color: #fff;
+    height: 100px;
+    width:calc(100vw - 300px);
+    border-bottom: 1px solid #eeeeee;
+    &__group-box{
+      margin:0 40px;
+      display: flex;
+      justify-content: space-between;
+      &__left-box{
+        &--group-name{
+          margin-top:35px;
+          color: $chat-main-fontmain-color;
+          font-size: 20px;
+        }
+        &--member-list{
+          margin-top:15px;
+          color: $chat-main-fontsub-color;
+          font-size:12px;
+        }
+      }
+      &__edit-btn{
+        height: 40px;
+        margin-top:28px;
+        color:$chat-main-btn-color;
+        border:1px solid $chat-main-btn-color;
+        align-items: center;
+        display:flex;
+        text-decoration: none;
+        padding:0 20px;
+      }
+    }
+  }
+  &__message-list-board{
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px);
+    width:calc(100vw - 300px);
+    overflow : auto;
+    &__lists{
+      padding :38px 40px 0 40px;
+      &__list{
+        &__input-to{
+          margin-bottom: 12px;
+          display: flex;
+          &--name{
+            color: $chat-main-fontmain-color;
+            font-size:16px;
+            font-weight: bold;
+          }
+          &--date{
+            color: $chat-main-fontsub-color;
+            font-size:12px;
+            margin-left:10px;
+          }
+        }
+        &__message{
+          color: 14px;
+          margin-bottom: 46px;
+
+        }
+
+      }
+    }
+  }
+  &__message-form{
+    background-color: #d2d2d2;
+    width:calc(100vw - 300px);
+    height: 90px;
+    display: flex;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    &__form-box{
+      display: flex;
+      width:calc(100vw - 300px);
+      &__text-form{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        &--type-message{
+          align-items: center;
+          border-style: none;
+          padding: 0 40px 0 10px;
+          height: 50px;
+          width: 100%;
+        }
+        &--image-btn{
+          position: absolute;
+          padding: 10px;
+          right:10px;
+          font-size: 1.3rem;
+          input{
+            display:none;
+          }
+        }
+      }
+      &__send-btn{
+        background-color: $chat-main-btn-color;
+        color: #fff;
+        height: 50px;
+        width: 100px;
+        border: 1px solid $chat-main-btn-color;
+        margin-left: 15px;
+      }
+    }
+  }
+}
+

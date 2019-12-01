@@ -1,0 +1,56 @@
+.chat-main
+ .chat-main__group-info
+  .chat-main__group-info__group-box
+   .chat-main__group-info__group-box__left-box
+    .chat-main__group-info__group-box__left-box--group-name test
+    .chat-main__group-info__group-box__left-box--member-list Member : tester
+   =link_to "#", class: "chat-main__group-info__group-box__edit-btn" do
+    Edit
+ 
+ .chat-main__message-list-board
+  .chat-main__message-list-board__lists
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+   .chat-main__message-list-board__lists__list
+    .chat-main__message-list-board__lists__list__input-to
+     .chat-main__message-list-board__lists__list__input-to--name takahiro
+     .chat-main__message-list-board__lists__list__input-to--date 2019/12/01(Sun) 14:16:16
+    .chat-main__message-list-board__lists__list__message aaaa
+ .chat-main__message-form
+  .chat-main__message-form__form-box
+   .chat-main__message-form__form-box__text-form
+    %input.chat-main__message-form__form-box__text-form--type-message{type: "text",placeholder: "type a message",value: ""}
+    %label{class: "chat-main__message-form__form-box__text-form--image-btn"}
+     =icon('fa', 'image')
+     %input{type: "file"}
+   %input.chat-main__message-form__form-box__send-btn{type: "submit",value: "Send"}/
+
+
