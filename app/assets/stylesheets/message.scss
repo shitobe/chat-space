@@ -47,7 +47,7 @@
     height: calc(100vh - 100px);
     width: 300px;
     position: absolute;
-    overflow-y:auto;
+    overflow:auto;
     &__lists-box{
       margin: 20px 20px 0px 20px;
       &__list{
@@ -65,7 +65,6 @@
     }
   }
 }
-
 .chat-main {
   &__group-info{
     background-color: #fff;
@@ -73,27 +72,78 @@
     width:calc(100vw - 300px);
     border-bottom: 1px solid #eeeeee;
     &__group-box{
-      
-      &__group-name{
-
-      }
-      &__mamber-list{
-
+      margin:0 40px;
+      display: flex;
+      justify-content: space-between;
+      &__left-box{
+        &--group-name{
+          margin-top:35px;
+          color: #333333;
+          font-size: 20px;
+        }
+        &--member-list{
+          margin-top:15px;
+          color: #999999;
+          font-size:12px;
+        }
       }
       &__edit-btn{
-
+        height: 40px;
+        margin-top:28px;
+        color:#38aef0;
+        border:1px solid #38aef0;
+        align-items: center;
+        display:flex;
+        text-decoration: none;
+        padding:0 20px;
       }
     }
   }
-  &__message-list{
+  &__message-list-board{
     background-color: #fafafa;
     height: calc(100vh - 100px - 90px);
     width:calc(100vw - 300px);
+    overflow : auto;
+    &__lists{
+      padding :38px 40px 0 40px;
+      &__list{
+        &__input-to{
+          margin-bottom: 12px;
+          display: flex;
+          &--name{
+            color: #333333;
+            font-size:16px;
+            font-weight: bold;
+          }
+          &--date{
+            color: #999999;
+            font-size:12px;
+            margin-left:10px;
+          }
+        }
+        &__message{
+          color: 14px;
+          margin-bottom: 46px;
+
+        }
+
+      }
+    }
   }
   &__message-form{
     background-color: #d2d2d2;
     width:calc(100vw - 300px);
     height: 90px;
+    display: flex;
+    &__text-form{
+      &--type-message{
+
+      }
+      &--image-upload{
+        
+      }
+    }
   }
+
 }
 
