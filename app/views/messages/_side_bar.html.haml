@@ -3,9 +3,8 @@
   .side-bar__user-name__items
    .side-bar__user-name__items__name 
     = current_user.name
-
    .side-bar__user-name__items__icons
-    = link_to "#", class: "side-bar__user-name__items__icons__icon" do
+    = link_to new_group_path, class: "side-bar__user-name__items__icons__icon" do
      = icon('fa', 'edit')
     = link_to edit_user_path(current_user), class: "side-bar__user-name__items__icons__icon" do
      = icon('fa', 'cog')
