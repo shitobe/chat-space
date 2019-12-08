@@ -126,9 +126,15 @@ $chat-main-btn-color: rgb(56,174,240);
           }
         }
         &__message{
-          color: 14px;
-          margin-bottom: 46px;
-
+          height: 100%;
+          width: 100%;
+          &__content {
+            color: black;
+            font-size: 14px;
+          }
+          &__image{
+            
+          }
         }
 
       }
