@@ -89,6 +89,14 @@ $chat-main-btn-color: rgb(56,174,240);
           margin-top:15px;
           color: $chat-main-fontsub-color;
           font-size:12px;
+          display: flex;
+          &__member{
+            display: inline-block;
+
+          }
+          &__name{
+            margin-left:5px
+          }
         }
       }
       &__edit-btn{
@@ -133,7 +141,6 @@ $chat-main-btn-color: rgb(56,174,240);
             font-size: 14px;
           }
           &__image{
-            
           }
         }
 

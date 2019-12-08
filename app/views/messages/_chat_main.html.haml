@@ -2,9 +2,15 @@
   .chat-main__group-info
     .chat-main__group-info__group-box
       .chat-main__group-info__group-box__left-box
-        .chat-main__group-info__group-box__left-box--group-name test
-        .chat-main__group-info__group-box__left-box--member-list Member : tester
-      =link_to "#", class: "chat-main__group-info__group-box__edit-btn" do
+        .chat-main__group-info__group-box__left-box--group-name
+          = @group.name
+        %ul.chat-main__group-info__group-box__left-box--member-list
+          %li.chat-main__group-info__group-box__left-box--member-list__member 
+            Member : 
+          - @group.users.each do |user|
+            %li.chat-main__group-info__group-box__left-box--member-list__name
+              = user.name
+      =link_to edit_group_path(@group), class: "chat-main__group-info__group-box__edit-btn" do
         Edit
   .chat-main__message-list-board
     =render @messages
