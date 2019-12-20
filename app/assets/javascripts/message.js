@@ -1,44 +1,42 @@
 $(function(){
   function buildHTML(message){
-    console.log(message.user_id.name)
     if (message.image) {
       var html =  `<div class="chat-main__message-list-board__lists">
-                    <div class="chat-main__message-list-board__lists__list">
-                      <div class="chat-main__message-list-board__lists__list__input-to">
-                        <div class="chat-main__message-list-board__lists__list__input-to--name">
-                          ${message.user_id}
-                        </div>
-                        <div class="chat-main__message-list-board__lists__list__input-to--date">
-                          ${message.created_at}
-                        </div>
-                      </div>
-                      <div class="chat-main__message-list-board__lists__list__message">
-                        <p class="chat-main__message-list-board__lists__list__message__content">
-                          ${message.content}
-                        </p>
+      <div class="chat-main__message-list-board__lists__list">
+        <div class="chat-main__message-list-board__lists__list__input-to">
+          <div class="chat-main__message-list-board__lists__list__input-to--name">
+            ${message.user_name}
+          </div>
+          <div class="chat-main__message-list-board__lists__list__input-to--date">
+            ${message.created_at}
+          </div>
+        </div>
+        <div class="chat-main__message-list-board__lists__list__message">
+          <p class="chat-main__message-list-board__lists__list__message__content">
+            ${message.content}
+          </p>
+          <img class="chat-main__message-list-board__lists__list__message__image" src="${message.image}" alt="Images">
         </div>
       </div>
     </div>`
     } else {
       var html =  `<div class="chat-main__message-list-board__lists">
-                  <div class="chat-main__message-list-board__lists__list">
-                    <div class="chat-main__message-list-board__lists__list__input-to">
-                      <div class="chat-main__message-list-board__lists__list__input-to--name">
-                        ${message.user_id}
-                      </div>
-                      <div class="chat-main__message-list-board__lists__list__input-to--date">
-                        ${message.created_at}
-                      </div>
-                    </div>
-                    <div class="chat-main__message-list-board__lists__list__message">
-                      <p class="chat-main__message-list-board__lists__list__message__content">
-                        ${message.content}
-                      </p>
-                      <img class="chat-main__message-list-board__lists__list__message__image" src= alt="Images">
-                      ${message.image}
-                    </div>
-                  </div>
-                </div>`
+      <div class="chat-main__message-list-board__lists__list">
+        <div class="chat-main__message-list-board__lists__list__input-to">
+          <div class="chat-main__message-list-board__lists__list__input-to--name">
+          ${message.user_name}
+          </div>
+          <div class="chat-main__message-list-board__lists__list__input-to--date">
+            ${message.created_at}
+          </div>
+        </div>
+        <div class="chat-main__message-list-board__lists__list__message">
+          <p class="chat-main__message-list-board__lists__list__message__content">
+            ${message.content}
+          </p>
+        </div>
+      </div>
+</div>`
     }
     return html
   }
@@ -56,6 +54,7 @@ $(function(){
     })
     .done(function(message){
       var html = buildHTML(message);
+      console.log(html)
       $('.chat-main__message-list-board').append(html);
       $('#message_content').val('');
       $('.chat-main__message-form__form-box__send-btn').prop('disabled', false);
