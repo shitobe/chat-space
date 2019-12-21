@@ -73,8 +73,6 @@ $(function() {
       .parent()
       .remove();
     
-    resultUsers();
-
   });
 
 });
