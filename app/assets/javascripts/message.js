@@ -100,11 +100,10 @@ $(function(){
           });
           $('.chat-main__message-list-board').append(insertHTML);
           $('.chat-main__message-list-board').animate({ scrollTop: $('.chat-main__message-list-board')[0].scrollHeight});
-          resetForm();
         }
       })
       .fail(function(){
-        console.log('error');
+        alert.log('error');
       });
     };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
