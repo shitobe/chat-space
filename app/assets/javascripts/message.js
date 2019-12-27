@@ -88,7 +88,7 @@ $(function(){
     })
   });
   var reloadMessages = function(){
-    last_message_id = $('.chat-main__message-list-board:last').data("message-id");
+    last_message_id = $('.chat-main__message-list-board__lists:last').data("message-id");
       $.ajax({
         url: "api/messages",
         type: 'GET',
